@@ -21,6 +21,12 @@ set showmatch
 set matchpairs+=<:>
 
 set title
+set titleold=""
+
+if &term =~ "^screen"
+    set t_ts=]2;
+    set t_fs=\
+endif
 
 set linebreak
 
