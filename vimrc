@@ -63,6 +63,8 @@ set laststatus=2
 set statusline=%f\ %m%r%h%w%=%y\ %4l/%L\ %7(%c%V%):0x%-4B\ %3p%%
 
 nmap <Leader>l :nohl<CR>
+nmap <Leader>p :set paste<CR>
+nmap <Leader>P :set nopaste<CR>
 
 nmap <Space> f<Space>
 nmap _ f_<Right>
