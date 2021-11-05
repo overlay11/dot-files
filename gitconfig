@@ -1,0 +1,20 @@
+[user]
+	name = Alexey Kopeikin
+	email = kopeikin88@gmail.com
+[core]
+	editor = vim
+	excludesFile = ~/.gitexclude
+	quotePath = false
+	pager = diff-highlight | less
+[init]
+	defaultBranch = master
+[help]
+	autoCorrect = never
+[pull]
+	ff = only
+[diff]
+	algorithm = histogram
+	colorMoved = default
+	colorMovedWS = allow-indentation-change
+[rerere]
+	enabled = true

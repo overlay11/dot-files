@@ -1,0 +1,9 @@
+.*.swp
+*~
+.DS_Store
+.idea/
+tmtags*
+.vagrant/
+*.o
+*.pyc
+__pycache__/
