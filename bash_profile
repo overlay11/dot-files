@@ -3,7 +3,7 @@ export CLICOLOR=1
 
 export EDITOR=vim
 export PAGER=less
-export LESS='WRj3i'
+export LESS='WRj3iPs?f%f  .%lt-%lb?L/%L.?Pm (%Pm\%).'
 export LYNX_CFG=~/.lynx.cfg
 
 alias ls='ls -Fh'
@@ -25,6 +25,19 @@ alias Gl='git log --oneline --graph'
 alias ffmpeg='ffmpeg -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
 alias ytdl='yt-dlp'
+
+F() {
+    find . -iname "*$1*" \( -type d -exec echo {}/ \; -or -print \) \
+        | ggrep -iF --color=always "$1" | $PAGER
+}
+
+grp() {
+    ggrep -nRIE --color=always --exclude-dir=.git "$@" | $PAGER
+}
+
+gglr() {
+    googler -x -l en --colorize always --np "$@" | $PAGER
+}
 
 bind '"\eOR":" git status -s\n"' # F3
 bind '"\eOS":" cd ..\n"' # F4
