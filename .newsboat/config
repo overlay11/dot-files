@@ -1,0 +1,8 @@
+text-width 80
+cleanup-on-quit yes
+max-items 100
+feed-sort-order lastupdated
+
+use-proxy yes
+proxy localhost:1086
+proxy-type socks5
