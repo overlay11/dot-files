@@ -1,0 +1,14 @@
+source "~/.mutt/muttrc"
+
+set from = "kopeikin88@yahoo.com"
+
+set folder = "imaps://imap.mail.yahoo.com:993"
+set imap_user = "$from"
+set spoolfile = "+Inbox"
+set postponed = "+Draft"
+set record = "+Sent"
+set trash = "+Trash"
+
+set header_cache = "~/.mutt/yahoo/cache"
+
+set smtp_url = "smtp://smtp.mail.yahoo.com:587"

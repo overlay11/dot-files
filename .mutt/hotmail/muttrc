@@ -1,0 +1,14 @@
+source "~/.mutt/muttrc"
+
+set from = "kopeikin88@hotmail.com"
+
+set folder = "imaps://imap-mail.outlook.com:993"
+set imap_user = "$from"
+set spoolfile = "+Inbox"
+set postponed = "+Drafts"
+set record = "+Sent"
+set trash = "+Deleted"
+
+set header_cache = "~/.mutt/hotmail/cache"
+
+set smtp_url = "smtp://smtp-mail.outlook.com:587"

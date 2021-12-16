@@ -1,0 +1,15 @@
+source "~/.mutt/muttrc"
+
+set from = "kopeikin88@yandex.ru"
+set realname = "Алексей Копейкин"
+
+set folder = "imaps://imap.yandex.ru:993"
+set imap_user = "$from"
+set spoolfile = "+INBOX"
+set postponed = "+Черновики"
+set record = "+Отправленные"
+set trash = "+Удаленные"
+
+set header_cache = "~/.mutt/yandex/cache"
+
+set smtp_url = "smtp://smtp.yandex.ru:465"
