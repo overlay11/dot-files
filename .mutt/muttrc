@@ -1,4 +1,6 @@
 set sort = reverse-date-received
+unset mark_old
+auto_view text/html
 set tilde
 set pager_stop
 set editor = vim
