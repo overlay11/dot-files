@@ -1,6 +1,6 @@
 --downloader aria2c
 --no-playlist
---output '%(title)s.%(ext)s'
+--output '%(artist|)s%(artist& - |)s%(title)s.%(ext)s'
 --format '[height<=?720][fps<=?30]'
 --prefer-free-formats
 --embed-subs

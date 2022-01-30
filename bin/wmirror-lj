@@ -1,0 +1,21 @@
+#!/bin/sh
+
+wmirror --reject-regex \
+"/data\
+|/read\
+|/friends\
+|/feed\
+|/memories\
+|/icons\
+|/pics\
+|/(photo|video)\
+|view=top-only\
+|mode=reply\
+|style=\
+|replyto=\
+|thread=\
+|amp=\
+|utm_source=\
+|nojs=\
+|.json" \
+"$@"

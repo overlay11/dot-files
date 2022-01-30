@@ -1,0 +1,2 @@
+#!/bin/sh
+exec ssh -N -D 1086 -L 1087:localhost:8888 "$@"

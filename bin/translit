@@ -1,0 +1,10 @@
+#!/usr/bin/env gsed -f
+
+y/абвгдеёзийклмнопрстуфхцьъыэ/abvgdeezijklmnoprstufhcjjye/
+y/АБВГДЕЁЗИЙКЛМНОПРСТУФХЦЬЪЫЭ/ABVGDEEZIJKLMNOPRSTUFHCJJYE/
+s/ж/zh/g; s/Ж/Zh/g
+s/ч/ch/g; s/Ч/Ch/g
+s/ш/sh/g; s/Ш/Sh/g
+s/щ/sch/g; s/Щ/Sch/g
+s/ю/ju/g; s/Ю/Ju/g
+s/я/ja/g; s/Я/Ja/g
