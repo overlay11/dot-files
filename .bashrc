@@ -8,6 +8,7 @@ alias vi=vim
 alias M=less
 alias bc='bc -l'
 
+alias G=git
 alias Ga='git add'
 alias Gd='git diff'
 alias Gdc='Gd --cached'
@@ -19,8 +20,10 @@ alias Gl='git log --oneline --graph'
 
 alias ffmpeg='ffmpeg -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
+alias ffplay='ffplay -hide_banner'
 alias ytdl='yt-dlp'
 alias syncthing='syncthing -no-browser'
+alias rmmeta='exiftool -All= -overwrite_original'
 
 F() {
     find . -iname "*$1*" \( -type d -exec echo {}/ \; -or -print \) \
@@ -38,6 +41,11 @@ gglr() {
 ytdl-pl() {
     ytdl -o '%(playlist_title)s/%(playlist_index)s. %(title)s.%(ext)s' \
         --yes-playlist "$@"
+}
+
+ytdl-portion() {
+    local ffmpeg_args="$1"; shift
+    ytdl --downloader ffmpeg --downloader-args ffmpeg_i:"$ffmpeg_args" "$@"
 }
 
 bind '"\eOR":" git status -s\n"' # F3

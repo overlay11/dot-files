@@ -11,7 +11,6 @@ set list
 set listchars=tab:-->,trail:.,nbsp:~
 
 set cursorline
-set cursorcolumn
 set colorcolumn=80
 set showcmd
 

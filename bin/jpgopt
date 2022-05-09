@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+jpegtran -optimize -progressive -perfect -copy all -outfile "$1.tmp" "$1"
+exiftool -All= -tagsFromFile "$1" -ColorSpaceTags -overwrite_original "$1.tmp"
+mv -f "$1.tmp" "$1"

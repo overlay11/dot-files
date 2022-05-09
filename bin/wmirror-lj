@@ -6,6 +6,7 @@ wmirror --reject-regex \
 |/friends\
 |/feed\
 |/memories\
+|/category\
 |/icons\
 |/pics\
 |/(photo|video)\

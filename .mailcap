@@ -1,1 +1,7 @@
 text/html; w3m -I %{charset} -T %t; copiousoutput
+text/plain; less '%s'; needsterminal
+image/jpeg; sxiv '%s'
+image/gif; mpv '%s'; needsterminal
+image/png; sxiv '%s'
+image/webp; sxiv '%s'
+application/pdf; zathura '%s'

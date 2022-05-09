@@ -7,5 +7,6 @@
 --sub-langs 'ru,rus,en,eng'
 --convert-subs vtt
 --postprocessor-args FFmpeg:'-map_metadata -1'
+--downloader-args ffmpeg:'-avoid_negative_ts make_non_negative'
 --remux-video mkv
 --console-title
