@@ -22,6 +22,7 @@ alias ffmpeg='ffmpeg -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
 alias ffplay='ffplay -hide_banner'
 alias ytdl='yt-dlp'
+alias ytdl-old='youtube-dl'
 alias syncthing='syncthing -no-browser'
 alias rmmeta='exiftool -All= -overwrite_original'
 
