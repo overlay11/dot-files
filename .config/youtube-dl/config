@@ -1,7 +1,7 @@
 --external-downloader aria2c
 --no-playlist
 --output '%(title)s.%(ext)s'
---format '[height<=?720][fps<=?30]'
+--format '(bestvideo+bestaudio/best)[height<=?720][fps<=?30]'
 --prefer-free-formats
 --embed-subs
 --sub-lang 'ru,rus,en,eng'
