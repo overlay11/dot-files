@@ -23,6 +23,8 @@ alias ffprobe='ffprobe -hide_banner'
 alias ffplay='ffplay -hide_banner'
 alias ytdl='yt-dlp'
 alias ytdl-old='youtube-dl'
+alias mpv-360='mpv --ytdl-format="(bv+ba/b)[height<=?360]"'
+alias mpv-480='mpv --ytdl-format="(bv+ba/b)[height<=?480]"'
 alias syncthing='syncthing -no-browser'
 alias rmmeta='exiftool -All= -overwrite_original'
 
@@ -47,6 +49,11 @@ ytdl-pl() {
 ytdl-portion() {
     local ffmpeg_args="$1"; shift
     ytdl --downloader ffmpeg --downloader-args ffmpeg_i:"$ffmpeg_args" "$@"
+}
+
+ytdl-bootleg() {
+    ytdl-pl -f '(ba/b)[asr=?44100]' -x --remux-video mka --no-embed-subs \
+        --no-mtime "$@"
 }
 
 bind '"\eOR":" git status -s\n"' # F3
