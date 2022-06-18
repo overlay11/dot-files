@@ -9,6 +9,7 @@ export LESS='WRj3iPs?f%f  .%lt-%lb?L/%L.?Pb (%Pb\%).'
 export LYNX_CFG=~/.lynx.cfg
 
 export HISTCONTROL=ignoreboth:erasedups
+export HISTSIZE=1000
 
 #export http_proxy=http://localhost:1087
 #export https_proxy=http://localhost:1087
@@ -17,6 +18,6 @@ export HISTCONTROL=ignoreboth:erasedups
 #export PATH+=:~/bin
 #export DBUS_SESSION_BUS_ADDRESS=disabled:
 
-[ -e ~/.bash_profile.local ] && . ~/.bash_profile.local
+[ -f ~/.bash_profile.local ] && source ~/.bash_profile.local
 
-. ~/.bashrc
+source ~/.bashrc
