@@ -1,0 +1,28 @@
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias ls='ls -Fh'
+#alias ls='ls -Fh --color'
+alias ll='ls -l'
+alias la='ll -A'
+alias df='df -h'
+alias vi=vim
+alias M="$PAGER"
+alias grep='grep --color'
+
+if [ "$BASH" ]; then
+    set -o vi
+
+    bind '"\eOQ": " cd ..\n"' # F2
+    bind '"\e[19~": clear-screen' # F8
+    bind '"\e[20~": " history 16\n"' # F9
+
+    bind '"\"": "\C-v\"\C-v\"\e[D"'
+    bind '"`": "\C-v`\C-v`\e[D"'
+    bind '"(": "\C-v()\e[D"'
+    bind '"[": "\C-v[]\e[D"'
+    bind '"{": "\C-v{}\e[D"'
+fi
+
+#umask 077
