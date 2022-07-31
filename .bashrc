@@ -13,6 +13,7 @@ alias G=git
 alias Ga='git add'
 alias Gd='git diff'
 alias Gdc='Gd --cached'
+alias Gs='git show'
 alias Gc='git commit'
 alias Gca='Gc --amend'
 alias Gb='git branch'
@@ -31,8 +32,12 @@ alias ytdl='yt-dlp'
 alias ytdl-old='youtube-dl'
 alias mpv-360='mpv --ytdl-format="(bv+ba/b)[height<=?360]"'
 alias mpv-480='mpv --ytdl-format="(bv+ba/b)[height<=?480]"'
+alias mpv-radio='mpv --ytdl-format="ba/b[height<=?360]" --no-video'
 alias syncthing='syncthing -no-browser'
 alias rmmeta='exiftool -All= -overwrite_original'
+
+alias Cr=chromium
+alias cr='Cr --incognito'
 
 pushd() { builtin pushd "$@" > /dev/null; }
 popd() { builtin popd "$@" > /dev/null; }

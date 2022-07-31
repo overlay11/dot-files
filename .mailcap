@@ -5,3 +5,5 @@ image/gif; mpv '%s'; needsterminal
 image/png; sxiv '%s'
 image/webp; sxiv '%s'
 application/pdf; zathura '%s'
+video/webm; mpv '%s'; needsterminal
+video/mp4; mpv '%s'; needsterminal

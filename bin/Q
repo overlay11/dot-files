@@ -1,0 +1,11 @@
+#!/bin/sh
+
+arch=$1; shift
+image="$1"; shift
+config="${image%.*}.qvm"
+
+ini2opts() {
+    gsed -E '/^\s*(#|$)/d; s/^\s*/-/; s/=/ /; s/"(.+)"/\1/'
+}
+
+exec qemu-system-${arch} $(ini2opts < "$config") "$@" "$image"

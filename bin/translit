@@ -1,4 +1,4 @@
-#!/usr/bin/env gsed -f
+#!/usr/bin/env -S gsed -f
 
 y/абвгдеёзийклмнопрстуфхцьъыэ/abvgdeezijklmnoprstufhcjjye/
 y/АБВГДЕЁЗИЙКЛМНОПРСТУФХЦЬЪЫЭ/ABVGDEEZIJKLMNOPRSTUFHCJJYE/
