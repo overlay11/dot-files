@@ -1,9 +1,9 @@
 text/html; w3m -I %{charset} -T %t; copiousoutput
 text/plain; less '%s'; needsterminal
-image/jpeg; sxiv '%s'
+image/jpeg; nsxiv '%s'
 image/gif; mpv '%s'; needsterminal
-image/png; sxiv '%s'
-image/webp; sxiv '%s'
+image/png; nsxiv '%s'
+image/webp; nsxiv '%s'
 application/pdf; zathura '%s'
 video/webm; mpv '%s'; needsterminal
 video/mp4; mpv '%s'; needsterminal
