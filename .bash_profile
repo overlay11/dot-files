@@ -11,6 +11,9 @@ export LYNX_CFG=~/.lynx.cfg
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=1000
 
+no_proxy=localhost,.futures.ru,.freelines.ru,.sknt.ru,.beeline.ru,.tele2.ru
+export no_proxy
+
 #export http_proxy=http://localhost:1087
 #export http_proxy=http://10.0.2.2:1087
 #export https_proxy=$http_proxy

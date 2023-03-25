@@ -33,6 +33,7 @@ alias ytdl-old='youtube-dl'
 alias mpv-radio='mpv --ytdl-format="ba/b[height<=?360]" --no-video'
 alias syncthing='syncthing -no-browser'
 alias rmmeta='exiftool -All= -overwrite_original'
+alias noproxy='http_proxy= https_proxy= SOCKS_SERVER='
 
 alias Cr=chromium
 alias cr='Cr --incognito'
