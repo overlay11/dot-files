@@ -2,6 +2,7 @@
 --no-playlist
 --output '%(artist|)s%(artist& - |)s%(title)s.%(ext)s'
 --format '(bv+ba/b/b*)[height<=?720][fps<=?30]'
+--alias quality,-Q '--format "(bv+ba/b/b*)[height<=?{0}]"'
 --prefer-free-formats
 --embed-subs
 --sub-langs 'ru,rus,en,eng'
