@@ -1,0 +1,6 @@
+#!/usr/bin/env -S gsed -Ef
+
+s/.+/\L&/
+s/\w(\w|')*/\u&/g
+s/\b(a|an|the|at|by|for|in|of|on|to|up|and|as|but|it|or|nor)\b/\l&/ig
+s/\w/\u&/

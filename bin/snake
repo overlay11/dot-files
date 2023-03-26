@@ -1,5 +1,6 @@
 #!/usr/bin/env -S gsed -Ef
 
 s/.+/\L&/
+s/'//g
 s/[^[:alnum:]]+/_/g
 s/^_//; s/_$//
