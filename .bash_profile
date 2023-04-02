@@ -6,7 +6,7 @@ export CLICOLOR=1
 export EDITOR=vim
 export PAGER=less
 export LESS='WRj3iPs?f%f  .%lt-%lb?L/%L.?Pb (%Pb\%).'
-export LYNX_CFG=~/.lynx.cfg
+export LYNX_CFG=~/.lynx/lynx.cfg
 
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=1000
