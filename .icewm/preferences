@@ -2,17 +2,17 @@ ModSuperIsCtrlAlt = 0
 MenuMouseTracking = 1
 MsgBoxDefaultAction = 1
 
-TaskBarShowClock = 0
+QuickSwitchToAllWorkspaces = 1
+QuickSwitchGroupWorkspaces = 0
+
 TaskBarShowAPMAuto = 0
 TaskBarShowMailboxStatus = 0
-TaskBarShowStartMenu = 0
 TaskBarShowCPUStatus = 0
 TaskBarShowMEMStatus = 0
 TaskBarShowNetStatus = 0
 TaskBarShowCollapseButton = 1
-
 PagerShowWindowIcons = 0
+TimeFormat="%R"
+TaskbarButtonWidthDivisor = 7
 
-TaskbarButtonWidthDivisor = 5
-TaskBarWidthPercentage = 62
-TaskBarJustify = "center"
+FocusRequestFlashTime = 1
