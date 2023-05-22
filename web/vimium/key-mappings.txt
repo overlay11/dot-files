@@ -1,0 +1,5 @@
+map \p togglePinTab
+unmap <a-p>
+map \m toggleMuteTab
+unmap <a-m>
+map \f LinkHints.activateModeWithQueue

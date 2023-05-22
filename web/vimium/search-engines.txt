@@ -1,0 +1,17 @@
+b: https://www.bing.com/search?q=%s Bing
+bp: https://ports.freebsd.org/cgi/ports.cgi?query=%s FreeBSD Ports
+bs: https://search.brave.com/search?q=%s Brave Search
+d: https://duckduckgo.com/?q=%s DuckDuckGo
+dp: https://pkginfo.devuan.org/cgi-bin/policy-query.html?q=%s Devuan Packages
+g: https://www.google.com/search?q=%s Google
+ler: https://www.lingvolive.com/en-us/translate/en-ru/%s Lingvo Live (En-Ru)
+lre: https://www.lingvolive.com/en-us/translate/ru-en/%s Lingvo Live (Ru-En)
+ms: https://search.marginalia.nu/search?query=%s Marginalia Search
+w: https://en.wikipedia.org/w/index.php?search=%s Wikipedia
+wa: https://www.wolframalpha.com/input?i=%s WolframAlpha
+wb: https://www.wiby.me/?q=%s Wiby
+wr: https://ru.wikipedia.org/w/index.php?search=%s Wikipedia (Ru)
+y: https://www.yandex.ru/search/?text=%s Yandex
+yh: https://search.yahoo.com/search?p=%s Yahoo!
+yt: https://www.youtube.com/results?search_query=%s YouTube
+ytm: https://music.youtube.com/search?q=%s YouTube Music
