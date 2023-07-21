@@ -3,3 +3,8 @@ unmap <a-p>
 map \m toggleMuteTab
 unmap <a-m>
 map \f LinkHints.activateModeWithQueue
+map yF LinkHints.activateMode action=copy-text
+map s Vomnibar.activate keyword=d
+map S Vomnibar.activateInNewTab keyword=d
+map \t createTab incognito
+map R reload hard
