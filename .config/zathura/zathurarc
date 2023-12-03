@@ -1,0 +1,8 @@
+set font "sans-serif normal 9"
+set window-width 960
+set window-height 720
+
+set dbus-service false
+set window-title-basename true
+set statusbar-home-tilde true
+set sandbox strict

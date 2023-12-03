@@ -1,0 +1,18 @@
+feh --action1 'feh -F %F' \
+    --auto-zoom \
+    --scale-down \
+    --zoom 800 \
+    --conversion-timeout 0 \
+    --draw-tinted \
+    --font 'DejaVuSans/9' \
+    --fontpath /usr/local/share/fonts/dejavu \
+    --fontpath /usr/share/fonts/truetype/dejavu \
+    --geometry 960x720 \
+    --info ';feh-info %F %z' \
+    --no-menus \
+    --on-last-slide hold \
+    --title '%n - feh' \
+    --thumb-title '%n - feh' \
+    --limit-width 960 \
+    --thumb-width 240 \
+    --thumb-height 180

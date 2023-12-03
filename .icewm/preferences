@@ -12,7 +12,9 @@ TaskBarShowMEMStatus = 0
 TaskBarShowNetStatus = 0
 TaskBarShowCollapseButton = 1
 PagerShowWindowIcons = 0
-TimeFormat="%R"
+TimeFormat = "%R"
 TaskbarButtonWidthDivisor = 7
 
 FocusRequestFlashTime = 1
+
+WorkspaceNames = "I", "II", "III", "IV"

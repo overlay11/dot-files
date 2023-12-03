@@ -8,8 +8,8 @@ alias Ta='T -aI .git'
 alias vi=vim
 alias M="$PAGER"
 alias bc='bc -l'
+alias D='jot -r 1 1'
 
-alias G=git
 alias Ga='git add'
 alias Gd='git diff'
 alias Gdc='Gd --cached'
@@ -74,6 +74,13 @@ mpv-tube() {
     mpv --ytdl-format="[height<=?${quality}]" "$@"
 }
 
+feh-montage() {
+    local columns="$1"; shift
+    local tile_height="$1"; shift
+    local tile_width=$(( tile_height * $1 )); shift
+    feh -m -W $(( columns * tile_width )) -y $tile_width -E $tile_height "$@"
+}
+
 bind '"\eOQ": " pushd ..\n"' # F2
 bind '"\eOR": " git status -s\n"' # F3
 bind '"\eOS": " popd\n"' # F4
@@ -89,7 +96,8 @@ bind '"[": "\C-v[]\e[D"'
 bind '"{": "\C-v{}\e[D"'
 
 #alias ls='ls -Fh --color'
-#alias B=brew
+#alias zathura='open -Wna Preview.app'
+
 #remnant() { join <(brew leaves) <(brew deps "$1"); }
 #[ "$PWD" != "$HOME" -a "$PWD" -ef "$HOME" ] && cd
 

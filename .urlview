@@ -1,0 +1,1 @@
+COMMAND tmux set-buffer -w `echo %s | urlrewrite`

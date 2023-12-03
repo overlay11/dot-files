@@ -1,0 +1,2 @@
+#!/bin/sh
+identify -precision 3 -format '%m | %b | %G | %[colorspace] | %z-bit' "$1"

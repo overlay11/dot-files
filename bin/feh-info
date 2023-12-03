@@ -1,0 +1,4 @@
+#!/bin/sh
+
+identify -precision 3 \
+    -format "%m | %b | %G | %[colorspace] | %z-bit | %[fx:$2*100]%%" "$1"

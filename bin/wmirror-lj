@@ -10,13 +10,14 @@ wmirror --reject-regex \
 |/icons\
 |/pics\
 |/(photo|video)\
-|view=top-only\
+|view=(top-only|comments)\
 |mode=reply\
 |style=\
 |replyto=\
 |thread=\
 |amp=\
-|utm_source=\
+|(utm|ila)_\
+|nc=\
 |nojs=\
 |.json" \
 "$@"

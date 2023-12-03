@@ -1,6 +1,7 @@
 text/html; w3m -I %{charset} -T %t; copiousoutput
 text/plain; less '%s'; needsterminal
 image/jpeg; nsxiv '%s'
+image/jxl; nsxiv '%s'
 image/gif; mpv '%s'; needsterminal
 image/png; nsxiv '%s'
 image/webp; nsxiv '%s'

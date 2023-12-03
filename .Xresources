@@ -1,5 +1,6 @@
 Xft.antialias: true
 Xft.hinting: true
 Xft.autohint: false
-
 !Xft.dpi: 96
+
+Nsxiv.bar.font: sans-serif:pixelsize=13

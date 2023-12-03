@@ -1,0 +1,10 @@
+#!/usr/bin/env -S gsed -Ef
+
+s!(://([-[:alnum:]]+\.)?)m(obile)?\.!\1!
+s![?&](utm|ila)_.+!!
+s!www\.reddit\.com!old.reddit.com!
+s!(twitter|\bx)\.com!twiiit.com!
+s!(youtube\.com/(embed|shorts|live)|youtu\.be)/([-_[:alnum:]]+).*!youtube.com/watch?v=\3!
+s!video_ext\.php\?oid=([[:digit:]]+)&id=([[:digit:]]+).*!video\1_\2!
+s!medium\.com!farside.link/scribe!
+s!\bt\.me/([_[:alnum:]]+)/([[:digit:]]+).*!tgstat.com/channel/@\1/\2!

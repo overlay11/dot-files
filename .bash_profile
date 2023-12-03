@@ -22,7 +22,8 @@ export no_proxy
 #export SOCKS_SERVER=10.0.2.2:1086
 #export SOCKS_VERSION=5
 
-#export PATH+=:~/bin
+#PATH+=:~/bin
+#MANPATH+=:/opt/local/share/man
 #export DBUS_SESSION_BUS_ADDRESS=disabled:
 
 [ -f ~/.bash_profile.local ] && source ~/.bash_profile.local
